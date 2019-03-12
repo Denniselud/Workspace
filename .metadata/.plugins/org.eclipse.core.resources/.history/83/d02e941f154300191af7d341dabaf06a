@@ -1,0 +1,27 @@
+package l1;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Graph extends JPanel {
+
+	JFrame fr;
+
+	public Graph() {
+		fr = new JFrame("Graph");
+
+		fr.getContentPane().add(new Graph());
+		fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		fr.setSize(500, 500);
+		fr.setVisible(true);
+
+	}
+
+	public void paint(Graphics g) {
+		g.drawLine(25, 25, 120, 120);
+
+	}
+}

@@ -1,0 +1,18 @@
+package pack1;
+
+import java.math.BigInteger;
+
+public class BinKoeffizent {
+
+	public BigInteger calc(Long l Long k) {
+
+		Fakultet f = new Fakultet().;
+		
+		
+		
+		
+		
+		return null;
+	}
+
+}

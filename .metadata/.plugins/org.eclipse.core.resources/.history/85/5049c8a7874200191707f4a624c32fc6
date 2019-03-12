@@ -1,0 +1,19 @@
+package l1;
+
+public class LottoMain {
+
+	public static void main(String[] args) {
+
+		MyLotto ml = new MyLotto();
+		System.out.println("Zahlen " + ml.toString(ml.getZahlen()));
+
+		while (ml.treffer() <= 5) {
+			ml.ziehung();
+			System.out.println(ml.getAktuelleZiehung());
+
+			System.out.println("Treffer = " + ml.treffer());
+		}
+		System.out.println("Ende");
+	}
+
+}

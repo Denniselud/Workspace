@@ -1,0 +1,51 @@
+1550669363027	Move method
+1550758586673	Rename local variable 'n'
+1550759334142	Delete element
+1550840586678	Rename method 'reverseInt'
+1550854619679	Rename resource 'Untitled 1'
+1550856791949	Rename local variable 'x'
+1550857958959	Encapsulate field 'zeichen'
+1550857977250	Encapsulate field 'warscheinlichkeit'
+1550857982140	Encapsulate field 'links'
+1550857986468	Encapsulate field 'rechts'
+1550858784108	Rename field 'zeichen'
+1550860445718	Rename type 'BinBaum'
+1550861627545	Delete element
+1550861750859	Rename type 'WurzelKnoten'
+1550861848050	Encapsulate field 'wurzel'
+1550862217404	Encapsulate field 'wurzel'
+1550866322512	Encapsulate field 'baum'
+1550869035772	Delete elements
+1550869458016	Encapsulate field 'baum'
+1550873004698	Rename method 'wahrscheinlichkeitAusrechnen'
+1550873679662	Rename method 'heufigkeitAusrechnen'
+1550903916376	Move method
+1550903920161	Move method
+1550903931478	Move method
+1550904120456	Rename type 'Bletter'
+1550904151188	Encapsulate field 'zeichen'
+1550904234470	Encapsulate field 'zeichen'
+1550904308838	Encapsulate field 'zeichen'
+1550904315604	Encapsulate field 'heufichkeit'
+1550905019640	Delete element
+1550905066757	Rename method 'zeichentabelleAuslesen'
+1550909855868	Move method
+1550910293236	Rename method 'dateiAuslesen'
+1550911354478	Rename method 'txtToString'
+1550911625926	Delete element
+1550912717627	Rename resource 'txtGen.txt'
+1550912792507	Move method
+1550912798365	Move method
+1550913472473	Move method
+1550913486193	Move methods
+1550913699608	Move method
+1550913705669	Move method
+1550915279201	Delete element
+1550917207645	Rename method 'heufigkeitToString'
+1551011283848	Rename method 'getWarscheinlichkeit'
+1551011305492	Rename method 'setWarscheinlichkeit'
+1551012059408	Rename field 'heufichkeit'
+1551016141545	Rename method 'heufigkeit'
+1551018515879	Rename method 'leinsteHeufigkeit'
+1551030654137	Move method
+1551030657840	Move method

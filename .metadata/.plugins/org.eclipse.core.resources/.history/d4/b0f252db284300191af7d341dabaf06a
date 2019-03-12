@@ -1,0 +1,87 @@
+package l1;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class LottoModel {
+
+	ArrayList<Integer> zahlen;
+	ArrayList<Integer> aktuelleZiehung;
+	int[] list;
+
+	public LottoModel() {
+		list = new int[49];
+		zahlen = new ArrayList<Integer>(6);
+		/*
+		 * int x = 0; for (int i = 0; i < 6; i++) { x = (int) (Math.random() * 49) + 1;
+		 * if (!zahlen.contains(x)) { zahlen.add(x); } else { i--; }
+		 * 
+		 * }
+		 */
+	}
+
+	public void zahlHinzuf(int x) {
+		zahlen.add(x);
+	}
+
+//	LinkedList<Integer> anzahlTreffer = new LinkedList<Integer>();
+
+	public int treffer() {
+		int anzahlTreffer = 0;
+		if (aktuelleZiehung != null) {
+			for (int i = 0; i < zahlen.size(); i++) {
+				if (aktuelleZiehung.contains(zahlen.get(i))) {
+					anzahlTreffer++;
+				}
+			}
+		}
+		// this.anzahlTreffer.add(anzahlTreffer);
+		return anzahlTreffer;
+	}
+
+	void ziehung() {
+		aktuelleZiehung = new ArrayList<Integer>(6);
+		int x = 0;
+		for (int i = 0; i < 6; i++) {
+			x = (int) (Math.random() * 49) + 1;
+			if (!aktuelleZiehung.contains(x)) {
+				aktuelleZiehung.add(i, x);
+				list[x-1]++;
+			} else {
+				i--;
+			}
+		}
+		
+	}
+
+	private void zehlen() {
+
+	}
+
+	public String toString(ArrayList<Integer> z) {
+		String s = "";
+		for (int i = 0; i < z.size(); i++) {
+			s = s + z.get(i) + " ";
+		}
+		return s;
+	}
+
+	public ArrayList<Integer> getZahlen() {
+		return zahlen;
+	}
+
+	public void setZahlen(ArrayList<Integer> zahlen) {
+		this.zahlen = zahlen;
+	}
+
+	public ArrayList<Integer> getAktuelleZiehung() {
+		return aktuelleZiehung;
+	}
+
+	public void setAktuelleZiehung(ArrayList<Integer> aktuelleZiehung) {
+		this.aktuelleZiehung = aktuelleZiehung;
+	}
+
+}

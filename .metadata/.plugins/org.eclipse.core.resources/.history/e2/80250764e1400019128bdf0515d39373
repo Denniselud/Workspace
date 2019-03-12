@@ -1,0 +1,83 @@
+package pack1;
+
+import java.util.Scanner;
+
+import pack0.ZahlenUmwandeln;
+
+public class Main {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		// GuiPack1 gui = new GuiPack1();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Bitte Auswälen: " + "\n" + "1 für BinominalKoeffizent" + "\n" + "2 für Fakultet" + "\n"
+				+ "3 für SatzDesHerons" + "\n" + "4 für Zahlen Umwandeln" + "\n"
+				+ "5 Berechne Abstand zweier Punkte im Raum " + "0 für Stop");
+
+		try {
+			int l = sc.nextInt();
+
+			switch (l) {
+			case 1:
+				System.out.println("Bitte geben Sie den wert von n ein: ");
+				Long n = sc.nextLong();
+				System.out.println("Bitte geben Sie den wert von k ein: ");
+				Long k = sc.nextLong();
+				System.out.println("Binominal Koeffizent: ");
+				System.out.println(BinKoeffizent.calc(n, k));
+				main(args);
+				break;
+			case 2:
+				System.out.println("Bitte geben Sie den wert von f ein: ");
+				System.out.println("Fakultät: " + Fakultet.fakultet(sc.nextLong()));
+				main(args);
+				break;
+			case 3:
+				System.out.println("Bitte geben Sie die werte für a,b,c ein: ");
+				double a = sc.nextDouble();
+				double b = sc.nextDouble();
+				double c = sc.nextDouble();
+				System.out.println("SatzDesHeron: " + SatzDesHeron.satzDesHeron(a, b, c));
+				main(args);
+				break;
+			case 4:
+				System.out.println("Zahlen Umwandeln");
+				ZahlenUmwandeln z = new ZahlenUmwandeln();
+				System.out.println("Dezimal Zahl eingeben: ");
+				int dez = sc.nextInt();
+				System.out.println("DezToBin: " + z.dezToBin(dez));
+				System.out.println("DezToHex: " + z.dezToHex(dez));
+				System.out.println("DezToOktal: " + z.dezToOkt(dez));
+				main(args);
+				break;
+			case 5:
+				Abstand abstand = new Abstand();
+				System.out.println(abstand.abstandBerechnen());
+				break;
+			case 0:
+				System.out.println("Ende");
+				sc.close();
+				System.exit(0);
+				break;
+			default:
+				System.out.println("falsche eingabe");
+				main(args);
+				break;
+			}
+		} catch (Exception e) {
+			System.err.println("Fehler");
+			e.printStackTrace();
+		}
+
+		// SatzDesHeron s = new SatzDesHeron();
+		// Fakultet f = new Fakultet();
+		// f.fakultet(l);
+
+		// System.out.println(f.fakultet(sc.nextLong()));
+		// System.out.println(s.SatzDesHeron(sc.nextDouble(), sc.nextDouble(),
+		// sc.nextDouble()));
+
+	}
+
+}
+//komprimierungsverf. huffman 

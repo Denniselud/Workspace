@@ -1,0 +1,39 @@
+package pack0;
+
+public class ZahlenUmwandeln {
+
+	protected String dezToBin(int dez) {
+
+		String s = "";
+
+		while (dez != 0) {
+			s = s + (dez % 2);
+			dez = dez / 2;
+		}
+
+		String x = reverseInt(s);
+
+		return x;
+	}
+
+	protected String dezToHex(int dez) {
+		String s = "";
+		while (dez != 0) {
+			s = s + (dez % 16);
+			dez = dez / 16;
+		}
+
+		return null;
+	}
+
+	private String reverseInt(String s) {
+		String x = "";
+
+		for (int i = s.length() - 1; i >= 0; i--) {
+			x = x + s.charAt(i);
+		}
+		return x;
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package l1;
+@SuppressWarnings("unused")
+public class LottoMain {
+
+	public static void main(String[] args) {
+		
+		LottoModel lm= new LottoModel();
+		LottoView lv=new LottoView();
+		
+		
+
+		System.out.println("Ende ");
+	}
+
+}

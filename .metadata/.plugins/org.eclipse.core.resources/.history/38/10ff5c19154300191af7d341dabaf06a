@@ -1,0 +1,25 @@
+package l1;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Graph extends JPanel {
+
+	JFrame fr;
+
+	public Graph() {
+		fr = new JFrame("Graph");
+
+	}
+
+	@Override
+	public void paintComponents(Graphics g) {
+		Graphics2D g2d = (Graphics2D) g;
+		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		g2d.drawLine(1, 10, 100, 100);
+
+	}
+}

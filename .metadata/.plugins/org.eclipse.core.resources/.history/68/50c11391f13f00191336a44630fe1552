@@ -1,0 +1,17 @@
+package pack1;
+
+import java.math.BigInteger;
+
+public class BinKoeffizent {
+
+	public static BigInteger calc(Long n, Long k) {
+
+		BigInteger nf = Fakultet.fakultet(n);
+		BigInteger kf = Fakultet.fakultet(k);
+		BigInteger nMinusK = Fakultet.fakultet(n - k);
+		BigInteger erg = nf.divide(kf);
+		BigInteger erg2 = erg.divide(nMinusK);
+		return erg2;
+	}
+
+}

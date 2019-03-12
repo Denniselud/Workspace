@@ -1,0 +1,17 @@
+package pack0;
+
+public class ZahlenUmwandeln {
+
+	protected String dezToBin(int dez) {
+
+		String s = "";
+
+		while (dez != 0) {
+			s = s + (dez % 2);
+			dez = dez / 2;
+		}
+
+		return null;
+	}
+
+}

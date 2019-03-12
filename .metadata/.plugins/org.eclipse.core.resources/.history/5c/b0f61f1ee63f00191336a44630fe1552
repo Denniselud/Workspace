@@ -1,0 +1,14 @@
+package pack1;
+
+public class BinKoeffizent extends Value {
+
+	public BinKoeffizent(String input) {
+		super(input);
+		// TODO Auto-generated constructor stub
+	}
+
+	public BinKoeffizent(Long input) {
+		super(input);
+		// TODO Auto-generated constructor stub
+	}
+}

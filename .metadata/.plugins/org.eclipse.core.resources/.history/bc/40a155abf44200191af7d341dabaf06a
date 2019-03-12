@@ -1,0 +1,12 @@
+package l1;
+@SuppressWarnings("unused")
+public class LottoMain {
+
+	public static void main(String[] args) {
+		
+		LottoController lc = new LottoController(new LottoView());
+
+		System.out.println("Ende ");
+	}
+
+}

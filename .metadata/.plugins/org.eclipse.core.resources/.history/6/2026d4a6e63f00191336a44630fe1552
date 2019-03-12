@@ -1,0 +1,17 @@
+package pack1;
+/**
+ * 
+ * @author Dennis
+ *
+ */
+public class BinKoeffizent extends Value {
+
+	Long l;
+	Long k;
+	
+	
+	public BinKoeffizent(Long l,Long k) {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

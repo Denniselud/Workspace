@@ -1,0 +1,22 @@
+package l1;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class LottoController implements ActionListener {
+
+	LottoView view;
+	LottoModel model;
+
+	public LottoController(LottoView v) {
+		view = v;
+		model = new LottoModel();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

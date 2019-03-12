@@ -1,0 +1,21 @@
+package l1;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class LottoMain implements ActionListener {
+
+	public static void main(String[] args) {
+		LottoController lc = new LottoController(new LottoView());
+		
+	
+		System.out.println("Ende ");
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

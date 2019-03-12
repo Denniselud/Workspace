@@ -1,0 +1,19 @@
+1551864840261	Delete element
+1551965501328	Rename type 'P3D'
+1551970724930	Move method
+1551972765176	Move method
+1551972771249	Move method
+1551973932377	Rename local variable 'z'
+1551974347983	Delete element
+1551986792332	Encapsulate field 'p1'
+1551986798807	Encapsulate field 'p2'
+1551986804661	Encapsulate field 'p3'
+1551986810995	Encapsulate field 'p4'
+1552021883255	Rename type 'Viereck'
+1552021990416	Rename type 'Cube'
+1552022465063	Encapsulate field 'seitenlenge'
+1552022681372	Delete element
+1552022699561	Move compilation unit
+1552022744485	Copy compilation unit
+1552023513623	Encapsulate field 'fläche'
+1552023518352	Encapsulate field 'volumen'

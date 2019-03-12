@@ -1,0 +1,21 @@
+package figuren;
+
+public class Dreieck {
+	
+	private Punkt p1;
+	private Punkt p2;
+	private Punkt p3;
+	
+	private double seiteA;
+	private double seiteB;
+	private double seiteC;
+	
+	private double winkelA;
+	private double winkelB;
+	private double winkelC;
+	
+	public Dreieck() {
+		
+	}
+
+}

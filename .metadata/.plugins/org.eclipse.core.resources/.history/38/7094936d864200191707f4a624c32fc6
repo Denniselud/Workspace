@@ -1,0 +1,15 @@
+package l1;
+
+public class LottoMain {
+
+	public static void main(String[] args) {
+
+		MyLotto ml = new MyLotto();
+		Thread t = new Thread(ml);
+		System.out.println("Zahlen " + ml.toString(ml.getZahlen()));
+		t.run();
+		System.out.println("Aktuelle Ziehung " + ml.toString(ml.getAktuelleZiehung()));
+
+	}
+
+}

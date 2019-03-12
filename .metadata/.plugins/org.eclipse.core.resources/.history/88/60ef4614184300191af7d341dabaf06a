@@ -1,0 +1,14 @@
+package l1;
+
+import javax.swing.JFrame;
+
+public class Graph extends JFrame {
+
+	public Graph() {
+		setTitle("Graph");
+		setBounds(100, 100, 500, 500);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+
+}

@@ -1,0 +1,19 @@
+package pack1;
+
+public class Value {
+
+	private Long value;
+
+	
+	public Value(Long input) {
+		this.value = input;
+	}
+
+	
+
+	@Override
+	public String toString() {
+
+		return String.valueOf(value);
+	}
+}

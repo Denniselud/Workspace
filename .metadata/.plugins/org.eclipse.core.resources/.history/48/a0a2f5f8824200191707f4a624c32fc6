@@ -1,0 +1,13 @@
+package l1;
+
+public class LottoMain {
+
+	public static void main(String[] args) {
+
+		MyLotto ml = new MyLotto();
+		System.out.println("Zahlen " + ml.getZahlen());
+		System.out.println("Aktuelle Ziehung " + ml.getAktuelleZiehung());
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package l1;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class LottoMain implements ActionListener {
+
+	public static void main(String[] args) {
+		LottoController lc = new LottoController();
+		LottoView view = new LottoView();
+		LottoModel ml = new LottoModel();
+		System.out.println("Zahlen " + ml.toString(ml.getZahlen()));
+
+		long anzZ = 0;
+
+		while (ml.treffer() <= 5) {
+			ml.ziehung();
+			anzZ++;
+			System.out.println(ml.toString(ml.zahlen));
+			System.out.println(ml.getAktuelleZiehung());
+			System.out.println("Treffer = " + ml.treffer());
+			System.out.println("Anzahl ziehungen " + anzZ);
+		}
+
+		System.out.println("Ende ");
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

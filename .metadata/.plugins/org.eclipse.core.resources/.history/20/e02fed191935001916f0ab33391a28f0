@@ -1,0 +1,17 @@
+package pack0;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		ZahlenUmwandeln z = new ZahlenUmwandeln();
+		Scanner s = new Scanner(System.in);
+		System.out.println("Dezimal Zahl eingeben: ");
+		String eingabe = s.nextLine();
+		System.out.println(z.dezToHex(Integer.parseInt(eingabe)));
+
+	}
+
+}

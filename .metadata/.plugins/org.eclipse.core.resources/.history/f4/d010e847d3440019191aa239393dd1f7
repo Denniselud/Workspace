@@ -1,0 +1,81 @@
+package blabla;
+
+/**
+ *
+ * @author CC-Student
+ */
+public class NachKomma {
+	private int divident = 11;
+	private int divisor = 3;
+	private int nachkommastellen = 30;
+	int[] input = { divident, divisor, nachkommastellen };
+	double value;
+
+	public NachKomma(int divident, int divisor, int nachkommastellen) {
+		/*
+		 * this.divident = divident; this.divisor = divisor; this.nachkommastellen =
+		 * nachkommastellen;
+		 */
+		setInput(divident, divisor, nachkommastellen);
+		calcValue();
+	}
+
+	public NachKomma(String divident, String dividor, String nachkommastellen) {
+		this(Integer.parseInt(divident), Integer.parseInt(dividor), Integer.parseInt(nachkommastellen));
+		/*
+		 * this.divident = Integer.parseInt(divident); this.divisor =
+		 * Integer.parseInt(dividor); this.nachkommastellen =
+		 * Integer.parseInt(nachkommastellen);
+		 */
+	}
+
+	public NachKomma(String[] input) {
+		this(Integer.parseInt(input[0]), Integer.parseInt(input[1]), Integer.parseInt(input[2]));
+	}
+
+	public NachKomma(long divident, long divisor, long nachkommastellen) {
+		this((int) divident, (int) divisor, (int) nachkommastellen);
+	}
+
+	public final void setInput(int divident, int divisor, int nachkommastellen) {
+		this.divident = divident;
+		this.divisor = divisor;
+		this.nachkommastellen = nachkommastellen;
+	}
+
+	public int[] getInput() {
+		return input;
+	}
+
+	private void calcValue() {
+		int vorkomma = divmod(divident, divisor)[0];
+		int nachkomma = divmod(divident, divisor)[1];
+		String result = "";
+		result += vorkomma + ".";
+		while (nachkommastellen > 0) {
+			vorkomma = divmod(nachkomma * 10, divisor)[0];
+			result += vorkomma;
+			nachkomma = divmod(nachkomma * 10, divisor)[1];
+			nachkommastellen -= 1;
+		}
+		value = Double.parseDouble(result);
+	}
+
+	private int[] divmod(int divident, int divisor) {
+		int[] result = new int[2];
+		result[0] = divident / divisor;
+		result[1] = divident % divisor;
+		return result;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("%f", this.value);
+	}
+
+	public static class MainNachkomma {
+		private static void main(String[] args) {
+			new NachKomma(10,5,2);
+		}
+	}
+}

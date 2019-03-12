@@ -1,0 +1,54 @@
+package l1;
+
+import java.util.ArrayList;
+
+public class MyLotto implements Runnable {
+
+	ArrayList<Integer> zahlen;
+	ArrayList<Integer> aktuelleZiehung;
+
+	public MyLotto() {
+		zahlen = new ArrayList<Integer>(6);
+		for (int i = 0; i < zahlen.size(); i++) {
+			zahlen.set(i, (int) (Math.random() * 6) + 1);
+		}
+	}
+
+	private void ziehung() {
+		aktuelleZiehung = new ArrayList<Integer>(6);
+		for (int i = 0; i < aktuelleZiehung.size(); i++) {
+			aktuelleZiehung.set(i, (int) (Math.random() * 49) + 1);
+		}
+
+	}
+
+	public String toString(ArrayList<Integer> z) {
+		String s = "Zahlen: ";
+		for (int i = 0; i < z.size(); i++) {
+			s = s + z.get(i) + " ";
+		}
+		return s;
+	}
+
+	public ArrayList<Integer> getZahlen() {
+		return zahlen;
+	}
+
+	public void setZahlen(ArrayList<Integer> zahlen) {
+		this.zahlen = zahlen;
+	}
+
+	public ArrayList<Integer> getAktuelleZiehung() {
+		return aktuelleZiehung;
+	}
+
+	public void setAktuelleZiehung(ArrayList<Integer> aktuelleZiehung) {
+		this.aktuelleZiehung = aktuelleZiehung;
+	}
+
+	@Override
+	public void run() {
+
+	}
+
+}

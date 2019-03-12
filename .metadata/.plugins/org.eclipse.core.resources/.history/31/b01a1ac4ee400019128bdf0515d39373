@@ -1,0 +1,91 @@
+package pack1;
+
+import java.awt.FlowLayout;
+import java.util.Observable;
+import java.util.Observer;
+import java.util.Scanner;
+
+import pack0.ZahlenUmwandeln;
+
+public class Main extends Observable {
+	static GuiPack1 gui;
+
+	public static void main(String[] args) {
+
+		gui = new GuiPack1();
+		flow();
+
+	}
+
+	private static void flow() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Bitte Auswälen: " + "\n" + "1 für BinominalKoeffizent" + "\n" + "2 für Fakultet" + "\n"
+				+ "3 für SatzDesHerons" + "\n" + "4 für Zahlen Umwandeln" + "\n"
+				+ "5 Berechne Abstand zweier Punkte im Raum\n" + "0 für Stop");
+		try {
+			int l = sc.nextInt();
+
+			switch (l) {
+			case 1:
+				System.out.println("Bitte geben Sie den wert von n ein: ");
+				Long n = sc.nextLong();
+				System.out.println("Bitte geben Sie den wert von k ein: ");
+				Long k = sc.nextLong();
+				System.out.println("Binominal Koeffizent: ");
+				System.out.println(BinKoeffizent.calc(n, k));
+				flow();
+				break;
+			case 2:
+				System.out.println("Bitte geben Sie den wert von f ein: ");
+				System.out.println("Fakultät: " + Fakultet.fakultet(sc.nextLong()));
+				flow();
+				break;
+			case 3:
+				System.out.println("Bitte geben Sie die werte für a,b,c ein: ");
+				double a = sc.nextDouble();
+				double b = sc.nextDouble();
+				double c = sc.nextDouble();
+				System.out.println("SatzDesHeron: " + SatzDesHeron.satzDesHeron(a, b, c));
+				flow();
+				break;
+			case 4:
+				System.out.println("Zahlen Umwandeln");
+				ZahlenUmwandeln z = new ZahlenUmwandeln();
+				System.out.println("Dezimal Zahl eingeben: ");
+				int dez = sc.nextInt();
+				System.out.println("DezToBin: " + z.dezToBin(dez));
+				System.out.println("DezToHex: " + z.dezToHex(dez));
+				System.out.println("DezToOktal: " + z.dezToOkt(dez));
+				flow();
+				break;
+			case 5:
+				// Abstand abstand = new Abstand();
+				Abstand ab = new Abstand(new Punkt(0, 0, 0), new Punkt(100, 100, 100));
+				System.out.println(ab.abstandBerechnen());
+				flow();
+				break;
+			case 0:
+				System.out.println("Ende");
+				sc.close();
+				System.exit(0);
+				break;
+			default:
+				System.out.println("falsche eingabe");
+				flow();
+				break;
+			}
+		} catch (Exception e) {
+			System.err.println("Fehler");
+			e.printStackTrace();
+			flow();
+		}
+	}
+
+	@Override
+	public synchronized void addObserver(Observer o) {
+		// TODO Auto-generated method stub
+		super.addObserver(gui);
+	}
+
+}
+//komprimierungsverf. huffman 

@@ -1,0 +1,22 @@
+package l1;
+
+import javax.swing.JFrame;
+
+@SuppressWarnings("unused")
+public class LottoMain {
+
+	public static void main(String[] args) {
+		try {
+			LottoModel lm = new LottoModel();
+			LottoView lv = new LottoView(lm);
+			
+
+		} catch (Exception e) {
+			System.out.println("!!! FEHLER !!!");
+			e.printStackTrace();
+		}
+
+		System.out.println("Ende ");
+	}
+
+}

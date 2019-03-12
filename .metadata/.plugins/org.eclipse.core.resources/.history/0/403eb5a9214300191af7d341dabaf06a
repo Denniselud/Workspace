@@ -1,0 +1,25 @@
+package l1;
+
+import java.awt.Graphics;
+import java.util.LinkedList;
+
+import javax.swing.JPanel;
+
+public class PanelGraph extends JPanel {
+	LinkedList<Integer> l;
+
+	public PanelGraph(LinkedList<Integer> l) {
+		this.l = l;
+		
+	}
+
+	public void paint(Graphics g) {
+		
+		for (int i = 0; i < l.size(); i++) {
+		//	g.drawLine(i, 400, i+1, 400-l.get(i));
+			g.drawOval(i, 400-(l.get(i)*10), 3, 3);
+		}
+		
+
+	}
+}

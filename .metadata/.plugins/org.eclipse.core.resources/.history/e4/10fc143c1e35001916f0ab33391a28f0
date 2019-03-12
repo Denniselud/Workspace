@@ -1,0 +1,8 @@
+package pack0;
+
+import javax.swing.JFrame;
+
+@SuppressWarnings("serial")
+public class ZahlensystemeGUI extends JFrame{
+
+}

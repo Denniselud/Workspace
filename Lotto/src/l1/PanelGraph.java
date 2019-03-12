@@ -1,0 +1,22 @@
+package l1;
+
+import java.awt.Graphics;
+
+import javax.swing.JPanel;
+
+public class PanelGraph extends JPanel {
+	int[] l;
+	String s;
+
+	public PanelGraph(String s, int[] l) {
+		this.l = l;
+		this.s = s;
+		
+	}
+
+	public void paint(Graphics g) {
+		
+		g.drawString(s, 0, 400);
+
+	}
+}

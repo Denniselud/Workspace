@@ -1,0 +1,28 @@
+package pack1;
+
+public class Value {
+
+	private Long value;
+
+	public Value(String input) {
+		this.value = Long.valueOf(input);
+	}
+
+	public Value(Long input) {
+		this.value = input;
+	}
+
+	public Long getValue() {
+		return value;
+	}
+
+	public void setValue(Long value) {
+		this.value = value;
+	}
+
+	@Override
+	public String toString() {
+
+		return String.valueOf(value);
+	}
+}

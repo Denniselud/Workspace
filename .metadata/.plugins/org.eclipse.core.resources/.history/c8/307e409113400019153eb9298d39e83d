@@ -1,0 +1,22 @@
+package pack1;
+
+import javax.swing.JFrame;
+
+public class GuiPack1 extends JFrame {
+
+	JFrame fr;
+
+	public JFrame getFr() {
+		return fr;
+	}
+
+	public GuiPack1() {
+		fr = new JFrame("GuiPack1");
+		fr.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		fr.setSize(500,500);
+		fr.setLocation(500, 100);
+		fr.setVisible(true);
+		
+	}
+
+}

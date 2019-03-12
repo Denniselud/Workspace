@@ -1,0 +1,70 @@
+package pack0;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+
+@SuppressWarnings("serial")
+public class ZahlensystemeGUI extends JFrame {
+
+	ZahlenUmwandeln zu;
+	JTextField tf;
+	JLabel lbl;
+	JTextPane tp;
+
+	public ZahlensystemeGUI() {
+		zu = new ZahlenUmwandeln();
+		setResizable(false);
+		setSize(300, 300);
+		setLocation(100, 100);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+
+		lbl = new JLabel("Dezimal Zahl eingeben :");
+		lbl.setBounds(60, 61, 361, 45);
+		getContentPane().add(lbl);
+
+		tf = new JTextField();
+		tf.addKeyListener(new KeyListener() {
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+
+				if (tf.getText().charAt(0) == '-') {
+					tp.setText("Negative zahlen erst ab v 2.0  ;)  ");
+				} else {
+					int zahl = Integer.parseInt(tf.getText());
+					String a = "Bin " + zu.dezToBin(zahl);
+					String b = "Okt " + zu.dezToOkt(zahl);
+					String c = "Hex " + zu.dezToHex(zahl);
+					tp.setText(a + "\n" + b + "\n" + c);
+				}
+
+			}
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+		tf.setBounds(59, 127, 199, 26);
+		getContentPane().add(tf);
+
+		tp = new JTextPane();
+		tp.setText("???");
+		tp.setBounds(60, 189, 401, 242);
+		getContentPane().add(tp);
+
+		setVisible(true);
+
+	}
+}

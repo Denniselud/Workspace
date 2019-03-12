@@ -1,0 +1,18 @@
+package pack1;
+/**
+ * 
+ * @author Dennis
+ *
+ */
+public class BinKoeffizent extends Value {
+
+	Long l;
+	Long k;
+	
+	
+	public BinKoeffizent(Long l,Long k) {
+		this.l=l;
+		this.k=k;
+	}
+	
+}

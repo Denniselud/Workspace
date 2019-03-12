@@ -1,0 +1,93 @@
+package pack0;
+
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+
+@SuppressWarnings("serial")
+public class ZahlensystemeGUI extends JFrame {
+
+	ZahlenUmwandeln zu;
+	JTextField tf;
+	JLabel lbl;
+	JTextPane tp;
+	JPanel panel;
+	JCheckBox chb[];
+
+	public ZahlensystemeGUI() {
+		chb = new JCheckBox[64];
+		zu = new ZahlenUmwandeln();
+		setResizable(false);
+		setSize(442, 498);
+		setLocation(100, 100);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		getContentPane().setLayout(null);
+
+		lbl = new JLabel("Dezimal Zahl eingeben :");
+		lbl.setBounds(139, 20, 205, 20);
+		getContentPane().add(lbl);
+
+		tf = new JTextField();
+		tf.setBounds(134, 60, 177, 26);
+		tf.addKeyListener(new KeyListener() {
+
+			@Override
+			public void keyTyped(KeyEvent e) {
+
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+
+				if (tf.getText().charAt(0) == '-') {
+					tp.setText("Negative zahlen erst ab v 2.0  ;)  ");
+				} else {
+					int zahl = Integer.parseInt(tf.getText());
+					String a = "Bin " + zu.dezToBin(zahl);
+					String b = "Okt " + zu.dezToOkt(zahl);
+					String c = "Hex " + zu.dezToHex(zahl);
+					tp.setText(a + "\n" + b + "\n" + c);
+				}
+
+			}
+
+			@Override
+			public void keyPressed(KeyEvent e) {
+				// TODO Auto-generated method stub
+
+			}
+		});
+		getContentPane().add(tf);
+
+		tp = new JTextPane();
+		tp.setBounds(0, 102, 436, 138);
+		tp.setText("???");
+		getContentPane().add(tp);
+
+		panel = new JPanel();
+		panel.setBounds(0, 259, 436, 157);
+
+		for (int i = 63; i >= 0; i--) {
+			chb[i] = new JCheckBox();
+			chb[i].setToolTipText("Bitposition "+String.valueOf(i));
+			panel.add(chb[i]);
+		}
+		getContentPane().add(panel);
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(10, 416, 411, 26);
+		getContentPane().add(textPane);
+
+		setVisible(true);
+
+	}
+}

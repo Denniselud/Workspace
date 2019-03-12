@@ -1,0 +1,115 @@
+package l1;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextPane;
+
+public class LottoView extends JFrame implements Runnable {
+	Thread t = new Thread(this);
+	private LottoModel model;
+	JPanel p;
+	JPanel pNord;
+	JPanel pCenter;
+	JTextPane tp;
+	JButton b;
+	ArrayList<JCheckBox> ckl;
+	int trefferStop;
+	ActionListener lis = new ActionListener() {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if (!t.isAlive()) {
+				model.setZahlen(new ArrayList<Integer>(6));
+				int selected = 0;
+				for (int i = 0; i < ckl.size(); i++) {
+					if (ckl.get(i).isSelected()) {
+						model.zahlHinzuf(i + 1);
+						selected++;
+					}
+				}
+				if (selected > 0) {
+					tp.setText(model.toString(model.getZahlen()));
+					t.start();
+				} else {
+					System.out.println("Wähle Zahlen");
+				}
+
+			} else {
+				System.out.println("Pause...");
+
+				try {
+					t.wait(3000);
+					System.out.println("Warte 3 sec...");
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				;
+
+			}
+
+		}
+	};
+
+	public LottoView(LottoModel m) {
+		this.model = m;
+		b = new JButton("START");
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setTitle("Lotto");
+		setBounds(500, 100, 500, 500);
+		p = new JPanel();
+		pNord = new JPanel();
+		pNord.setPreferredSize(new Dimension(400, 200));
+		pCenter = new JPanel();
+		pCenter.setPreferredSize(new Dimension(400, 200));
+		p.setLayout(new BorderLayout());
+
+		tp = new JTextPane();
+		tp.setPreferredSize(new Dimension(400, 200));
+		tp.setBorder(BorderFactory.createBevelBorder(1));
+
+		ckl = new ArrayList<JCheckBox>(49);
+		for (int i = 0; i < 49; i++) {
+			JCheckBox jcb = new JCheckBox(String.valueOf(i + 1));
+			ckl.add(jcb);
+			pNord.add(jcb);
+		}
+		b.addActionListener(lis);
+		p.add(b, BorderLayout.SOUTH);
+		pCenter.add(tp);
+		p.add(pNord, BorderLayout.NORTH);
+		p.add(pCenter, BorderLayout.CENTER);
+		getContentPane().add(p);
+		setVisible(true);
+
+	}
+
+	@Override
+	public void run() {
+		long ziehNum = 0;
+		trefferStop = model.getZahlen().size();
+		while (model.treffer() < trefferStop) {
+			model.ziehung();
+			ziehNum++;
+			tp.setText("Deine Zahlen: " + model.toString(model.getZahlen()) + "\n Zeiehung Zahlen: "
+					+ model.toString(model.getAktuelleZiehung()) + "\n Aktuelle Treffer: " + model.treffer()
+					+ "\n Aktuelle Ziehung: " + ziehNum);
+
+			System.out.println("Zahlen: " + model.toString(model.getZahlen()));
+			System.out.println("Ziehung: " + model.toString(model.getAktuelleZiehung()));
+			System.out.println("Aktuelle Treffer: " + model.treffer());
+			System.out.println("Aktuelle Ziehung: " + ziehNum);
+		}
+		System.out.println("TREFFER !!!");
+		
+	}
+
+}

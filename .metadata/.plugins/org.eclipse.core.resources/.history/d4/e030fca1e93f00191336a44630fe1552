@@ -1,0 +1,19 @@
+package pack1;
+
+import java.math.BigInteger;
+
+class Fakultet {
+
+	public BigInteger fakultet(long f1) {
+
+		long x = f1;
+		BigInteger bi = new BigInteger("1");
+		// System.out.println(bi.toString());
+
+		while (x > 1) {
+			bi = bi.multiply(BigInteger.valueOf(x));
+			x--;
+		}
+		return bi;
+	}
+}

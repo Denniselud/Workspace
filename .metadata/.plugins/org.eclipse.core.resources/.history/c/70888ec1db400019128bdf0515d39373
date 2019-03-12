@@ -1,0 +1,18 @@
+package pack1;
+
+public class P3D {
+
+	private double x;
+	private double y;
+	private double z;
+
+	public P3D() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public P3D(double x, double y, double z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
+}

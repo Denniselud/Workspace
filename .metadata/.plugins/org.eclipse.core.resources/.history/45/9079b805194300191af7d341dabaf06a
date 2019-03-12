@@ -1,0 +1,19 @@
+package l1;
+
+import java.awt.Graphics;
+import java.util.ArrayList;
+
+import javax.swing.JPanel;
+
+public class PanelGraph extends JPanel {
+	ArrayList<Integer> l;
+
+	public PanelGraph(ArrayList<Integer> l) {
+		this.l = l;
+	}
+
+	public void paint(Graphics g) {
+		g.drawLine(0, 0, 120, 120);
+
+	}
+}
