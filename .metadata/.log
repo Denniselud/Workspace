@@ -1788,3 +1788,1859 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-13 10:44:34.662 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-13 10:45:30.141
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-13 10:45:30.174
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.ui 4 4 2019-03-13 10:46:25.340
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2019-03-13 10:46:25.340
+!MESSAGE Cannot determine URI for '/Ubung/src/blabla/MainNachkomma.java'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/Ubung/src/blabla/MainNachkomma.java'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:115)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:563)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:1013)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1277)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4167)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:260)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1476)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2573)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2546)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1423)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3135)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3152)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3177)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:365)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:345)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:193)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:77)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1099)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2019-03-13 10:46:25.363
+!MESSAGE Cannot determine URI for '/Ubung/src/blabla/MainNachkomma.java'.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-13 10:46:52.692
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-13 10:46:57.530
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-13 10:46:57.573
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.apidocs.rcp.views.apidocs' id and the 'Augmented Docs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-13 10:46:57.574
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.models.rcp.views.projectCoordinates' id and the 'Project Coordinates' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-13 10:46:57.576
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.models.rcp.views.modelRepositories' id and the 'Model Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-13 10:46:57.579
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.models.rcp.views.dependencyOverview' id and the 'Dependency Overview' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-13 10:46:57.581
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.snipmatch.rcp.views.snippets' id and the 'Snippets' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+!SESSION 2019-03-13 10:47:46.784 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\datanasov\Desktop\GitHubRep\Workspace -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-13 10:47:51.480
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-13 10:47:51.482
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.ui 4 4 2019-03-13 10:48:00.690
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2019-03-13 10:48:00.690
+!MESSAGE Cannot determine URI for '/Ubung/src/blabla/MainNachkomma.java'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/Ubung/src/blabla/MainNachkomma.java'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:115)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:563)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:1013)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1277)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4167)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:260)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1476)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2573)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2546)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1423)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3135)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2193)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3152)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3177)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:365)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:345)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:193)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:77)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1295)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1099)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2019-03-13 10:48:00.691
+!MESSAGE Cannot determine URI for '/Ubung/src/blabla/MainNachkomma.java'.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-13 10:48:01.947
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-13 10:48:03.427
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-14 08:11:00.132 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-14 08:11:08.774
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-14 08:11:08.797
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-14 08:11:22.509
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-14 08:11:23.671
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-15 08:05:18.931 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 08:05:29.756
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 08:05:29.809
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 08:05:54.751
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-15 08:05:56.345
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-15 10:14:11.834 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/datanasov/Desktop/GitHubRep/Workspace/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:14:54.221
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:14:54.223
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.ui 2 0 2019-03-15 10:14:54.450
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-03-15 10:14:54.450
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-03-15 10:14:55.081
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-03-15 10:14:55.115
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:15:01.828
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-15 10:15:03.262
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-15 10:18:29.452 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data file:/C:/Users/datanasov/Desktop/GitHubRep/Workspace/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:18:32.863
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:18:32.865
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:18:40.459
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-15 10:18:41.438
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:21:42.925
+!MESSAGE Connection to http://download.eclipse.org/releases/2018-12/201812191000/plugins/org.apache.axis_1.4.0.v201411182030.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:21:53.424
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.jetty.webapp_9.4.14.v20181113.jar failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:22:00.864
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.json_1.1.0.v201802171654.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:22:18.826
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/features/org.eclipse.jst.enterprise_core.feature_3.10.0.v201803082036.jar failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:22:54.821
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.jst.j2ee.web_1.1.911.v201802201739.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:22:58.379
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.jst.jsp.core_1.3.0.v201810290944.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:23:01.531
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.jst.jsp.ui.infopop_1.0.200.v201711201733.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:23:10.541
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.jst.server.generic.jonas_1.5.500.v201710101758.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:23:22.038
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.jst.server.preview.adapter_1.1.500.v201806111634.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:23:53.673
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.jst.ws.doc.user_1.0.700.v201802222200.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:24:19.757
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.wst.doc.user_1.2.0.v201711201733.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:24:20.754
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.wst.html.ui_1.1.100.v201807090620.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:24:44.272
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.wst.jsdt.debug.rhino_1.0.500.v201605251607.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:25:11.082
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.wst.server.preview_1.1.600.v201711301711.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:25:16.427
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/features/org.eclipse.wst.web_userdoc.feature_3.11.0.v201807251925.jar failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:25:20.101
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.wst.webtools.doc.user_1.0.500.v201711201733.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:25:26.876
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/features/org.eclipse.wst.ws_ui.feature_3.8.1.v201802222200.jar failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2019-03-15 10:25:47.234
+!MESSAGE Connection to http://mirror.cc.columbia.edu/pub/software/eclipse/releases/2018-12/201812191000/plugins/org.eclipse.wst.wsdl.validation_1.1.701.v201805181041.jar.pack.gz failed on Connection timed out: connect. Retry attempt 0 started
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient4.ECFHttpClientProtocolSocketFactory.connectSocket(ECFHttpClientProtocolSocketFactory.java:86)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1084)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1075)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1071)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-03-15 10:26:05.560 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data file:/C:/Users/datanasov/Desktop/GitHubRep/Workspace/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:26:12.231
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:26:12.234
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-15 10:26:19.598
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.toolbar.NewsToolControl
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-15 10:26:20.497
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-18 08:16:02.356 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-18 08:16:52.601
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-18 08:16:52.653
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-18 08:17:05.872
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-03-18 08:18:03.157
+!MESSAGE DevStyle theme is being deactivated on this workspace; restoring colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2019-03-18 08:18:03.209
+!MESSAGE DevStyle is restoring colors that were configured prior to DevStyle being enabled
+!SESSION 2019-03-18 08:18:08.259 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data file:/C:/Users/datanasov/Desktop/GitHubRep/Workspace/ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-18 08:18:11.983
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-18 08:18:11.985
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-18 08:18:17.712
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-19 08:33:35.435 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-19 08:41:54.927
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-19 08:41:54.972
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-19 08:42:06.480
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-21 08:16:44.850 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-21 08:17:30.082
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-21 08:17:30.179
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-21 08:17:45.441
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-25 12:01:30.414 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-25 12:02:28.124
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-25 12:02:28.218
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-25 12:02:41.900
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-27 08:05:58.946 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-27 08:15:21.898
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-03-27 08:15:21.977
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-27 08:15:36.751
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-02 11:08:40.387 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-02 11:09:31.313
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-02 11:09:31.399
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-02 11:09:43.866
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-03 08:08:53.913 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-03 08:09:42.356
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-03 08:09:42.458
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-03 08:09:53.947
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-04 11:22:30.046 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-04 11:23:13.765
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-04 11:23:13.878
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-04 11:23:26.525
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-05 07:47:25.011 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-04-05 07:47:41.734
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-05 07:48:17.457
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-05 07:48:17.459
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-05 07:48:49.938
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-08 08:11:49.318 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-08 08:12:58.135
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-08 08:12:58.285
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-08 08:13:13.083
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-10 10:37:01.066 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-10 10:37:53.271
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-10 10:37:53.379
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-10 10:38:03.523
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-10 10:58:26.997 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-10 10:58:33.557
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-10 10:58:33.559
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-10 10:58:40.777
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-11 09:45:05.060 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-11 09:45:36.225
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-11 09:45:36.352
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-11 09:45:49.079
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-04-11 12:03:58.457 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-11 12:04:04.262
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-04-11 12:04:04.264
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-11 12:04:12.245
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-03 08:23:57.163 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-03 08:24:55.953
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-03 08:24:56.080
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-03 08:25:09.257
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-05-03 08:47:56.978
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1093)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(SynchronizableDocument.java:176)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1123)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(SynchronizableDocument.java:164)
+	at org.eclipse.jdt.internal.ui.text.java.LazyGenericTypeProposal$2$1.perform(LazyGenericTypeProposal.java:791)
+	at org.eclipse.jface.text.AbstractDocument.executePostNotificationChanges(AbstractDocument.java:1224)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(AbstractDocument.java:757)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:716)
+	at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(AbstractDocument.java:700)
+	at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(AbstractDocument.java:774)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1105)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(SynchronizableDocument.java:176)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1123)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(SynchronizableDocument.java:164)
+	at org.eclipse.jface.text.DefaultDocumentAdapter.replaceTextRange(DefaultDocumentAdapter.java:236)
+	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7390)
+	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8254)
+	at org.eclipse.swt.custom.StyledText.doBackspace(StyledText.java:2282)
+	at org.eclipse.swt.custom.StyledText.invokeAction(StyledText.java:7179)
+	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:6042)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:6069)
+	at org.eclipse.swt.custom.StyledText.lambda$1(StyledText.java:5767)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1064)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1106)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1102)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1489)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4888)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:353)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4768)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4770)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3545)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SESSION 2019-05-06 07:43:01.391 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-06 07:44:05.372
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-06 07:44:05.521
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-06 07:44:24.903
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2019-05-06 07:44:53.323
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Contains: Error deleting resource '/MyTetris' from the workspace tree.
+org.eclipse.core.internal.resources.ResourceException(/MyTetris)[569]: java.lang.Exception: Could not delete metadata for '/MyTetris'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.LocalMetaArea.delete(LocalMetaArea.java:109)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:337)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:176)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:447)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.core.resources 1 273 2019-05-06 07:44:53.326
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 1 4 2019-05-06 07:44:53.326
+!MESSAGE Error deleting resource '/MyTetris' from the workspace tree.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/MyTetris)[569]: java.lang.Exception: Could not delete metadata for '/MyTetris'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.LocalMetaArea.delete(LocalMetaArea.java:109)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:337)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:176)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:447)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 3 org.eclipse.core.resources 4 569 2019-05-06 07:44:53.326
+!MESSAGE Could not delete metadata for '/MyTetris'.
+!STACK 0
+java.lang.Exception: Could not delete metadata for '/MyTetris'.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.LocalMetaArea.delete(LocalMetaArea.java:109)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:337)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:176)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteProject(ResourceTree.java:447)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:853)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1775)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:752)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:322)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:158)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:283)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:308)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2019-05-07 07:54:37.748 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-07 07:55:17.873
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-07 07:55:18.086
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-07 07:55:37.623
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-07 11:06:34.654 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-07 11:06:59.871
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-07 11:06:59.877
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-07 11:07:08.870
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-08 07:49:40.715 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-08 08:25:30.681
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-08 08:25:30.851
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-08 08:25:44.850
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-05-09 07:55:35.182 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-09 07:56:15.160
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-09 07:56:15.322
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-09 07:56:26.843
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-09 07:56:53.820
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.wb.internal.core.editor.DesignPage.dispose(DesignPage.java:140)
+	at org.eclipse.wb.internal.core.editor.multi.MultiMode.dispose(MultiMode.java:135)
+	at org.eclipse.wb.internal.core.editor.multi.DesignerEditor.dispose(DesignerEditor.java:147)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.handlePartInitException(CompatibilityPart.java:314)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:347)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:193)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:77)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:177)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1360)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1591)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1543)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1513)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1637)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$3(AbstractTextEditor.java:4262)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:324)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:639)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:148)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:285)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:713)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:450)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:469)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:622)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:822)
+	at org.eclipse.jface.window.Window.open(Window.java:798)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:192)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:212)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:126)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:44)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:164)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:497)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:490)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:455)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:99)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:51)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:452)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.run(DeleteAction.java:197)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.eclipse.ui 4 4 2019-05-09 07:56:53.825
+!MESSAGE Unable to create part
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2019-05-09 07:56:53.825
+!MESSAGE Cannot determine URI for '/Snake/src/snakeV1/MainJFrame.java'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot determine URI for '/Snake/src/snakeV1/MainJFrame.java'.
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:239)
+	at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:115)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:563)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:1013)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:481)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1277)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:4167)
+	at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:260)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1476)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2573)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2546)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1423)
+	at org.eclipse.wb.internal.core.editor.multi.DesignerEditor.doSetInput(DesignerEditor.java:109)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$1(AbstractTextEditor.java:3135)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:440)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:356)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$4(WorkbenchWindow.java:2249)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2247)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3152)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:3177)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:365)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:345)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:193)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:108)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:77)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:107)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:177)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1360)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1591)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1543)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1513)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1637)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.lambda$3(AbstractTextEditor.java:4262)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.run(RefactoringWizardDialog2.java:324)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.internalPerformFinish(RefactoringWizard.java:639)
+	at org.eclipse.ltk.ui.refactoring.UserInputWizardPage.performFinish(UserInputWizardPage.java:148)
+	at org.eclipse.ltk.ui.refactoring.resource.DeleteResourcesWizard$DeleteResourcesRefactoringConfigurationPage.performFinish(DeleteResourcesWizard.java:285)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizard.performFinish(RefactoringWizard.java:713)
+	at org.eclipse.ltk.internal.ui.refactoring.RefactoringWizardDialog2.okPressed(RefactoringWizardDialog2.java:450)
+	at org.eclipse.jface.dialogs.Dialog.buttonPressed(Dialog.java:469)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:622)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:822)
+	at org.eclipse.jface.window.Window.open(Window.java:798)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation$1.run(RefactoringWizardOpenOperation.java:192)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:212)
+	at org.eclipse.ltk.ui.refactoring.RefactoringWizardOpenOperation.run(RefactoringWizardOpenOperation.java:126)
+	at org.eclipse.ltk.internal.ui.refactoring.actions.DeleteResourcesHandler.execute(DeleteResourcesHandler.java:44)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:164)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:497)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:490)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommandInContext(LegacyHandlerService.java:455)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.runCommand(LTKLauncher.java:99)
+	at org.eclipse.ui.internal.ide.actions.LTKLauncher.openDeleteWizard(LTKLauncher.java:51)
+	at org.eclipse.ui.actions.DeleteResourceAction.run(DeleteResourceAction.java:452)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.DeleteAction.run(DeleteAction.java:197)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:252)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:476)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:568)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:400)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1055)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2019-05-09 07:56:53.826
+!MESSAGE Cannot determine URI for '/Snake/src/snakeV1/MainJFrame.java'.
+!SESSION 2019-05-10 08:17:44.473 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=1.8.0_202
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=de_DE
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-10 08:18:27.778
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.poll.PollNewsFeedsHandler
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-05-10 08:18:27.947
+!MESSAGE Unable to retrieve the bundle from the URI: bundleclass://org.eclipse.recommenders.news.rcp/org.eclipse.recommenders.internal.news.rcp.read.ReadNewsItemsHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-05-10 08:18:40.045
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\datanasov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
